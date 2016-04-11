@@ -25,6 +25,6 @@
 			<to uri="stream:out" />
 		</route>
 	</camelContext>
-	<bean id="firstTest" class="com.nespresso.camel.model.FirstTest"/>
+	<bean id="firstTest" class="com.sqli.camel.model.FirstTest"/>
 
 </beans>

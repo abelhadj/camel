@@ -1,4 +1,4 @@
-package com.nespresso.camel.model;
+package com.sqli.camel.model;
 
 public class FirstTest {
 	

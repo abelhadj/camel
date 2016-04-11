@@ -1,4 +1,4 @@
-package com.nespresso.camel;
+package com.sqli.camel;
 
 import org.apache.activemq.camel.component.ActiveMQComponent;
 import org.apache.camel.CamelContext;

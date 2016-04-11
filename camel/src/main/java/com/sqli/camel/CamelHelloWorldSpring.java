@@ -1,4 +1,4 @@
-package com.nespresso.camel;
+package com.sqli.camel;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.ProducerTemplate;
