@@ -1,4 +1,4 @@
-package com.nespresso.camel;
+package com.sqli.camel;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
