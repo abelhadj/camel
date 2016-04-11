@@ -16,20 +16,12 @@ public class CamelHelloWorldBean
 				@Override
 				public void configure() throws Exception {
 					from("activemq:queue:test.queue1")
-					.to("activemq:queue:test.queue2");
-				}
-			});
-			context.addRoutes(new RouteBuilder() {
-				@Override
-				public void configure() throws Exception {
-					from("activemq:queue:test.queue2")
 					.to("stream:out");
 				}
 			});
 			ProducerTemplate template = context.createProducerTemplate();
 			context.start();
 			template.sendBody("activemq:test.queue1", "Hello World");
-			template.sendBody("activemq:test.queue2", "Hello World Abdo");
 			Thread.sleep(2000);
 		} finally {
 			context.stop();
